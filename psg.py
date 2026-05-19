@@ -13,7 +13,7 @@ URLS_A_SURVEILLER = [
 
 MOTS_CLES = [
     "diffusion", "finale", "parc des princes", "ecran geant",
-    "viewing", "fan zone", "30 mai", "budapest", "arsenal"
+    "viewing", "fan zone", "30 mai", "budapest", "arsenal"retransmission", "retransmission au parc", "alerte billetterie","
 ]
 
 contenu_precedent = {}
@@ -32,7 +32,7 @@ def verifier():
             contenu = r.text.lower()
 
             # Cherche les liens qui contiennent des mots clés billetterie
-            liens = re.findall(r'href=["\']([^"\']*(?:diffusion|finale|parc|viewing|fan-zone)[^"\']*)["\']', contenu)
+            liens = re.findall(r'href=["\']([^"\']*(?:retransmission|diffusion|billetterie)[^"\']*)["\']', contenu)
 
             if liens and not notif_envoyee:
                 lien = liens[0]
