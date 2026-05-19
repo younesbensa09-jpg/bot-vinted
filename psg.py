@@ -13,9 +13,9 @@ URLS_A_SURVEILLER = [
 
 MOTS_CLES = [
     "diffusion", "finale", "parc des princes", "ecran geant",
-    "viewing", "fan zone", "30 mai", "budapest", "arsenal"retransmission", "retransmission au parc", "alerte billetterie","
+    "viewing", "fan zone", "30 mai", "budapest", "arsenal",
+    "retransmission", "retransmission au parc", "alerte billetterie",
 ]
-
 contenu_precedent = {}
 notif_envoyee = False
 
